@@ -46,6 +46,12 @@
     initial-value: #a6afc366;
 }
 
+@property --color-page {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: midnightblue;
+}
+
 html {
     scroll-behavior: smooth;
 }
