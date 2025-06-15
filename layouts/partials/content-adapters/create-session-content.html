@@ -55,7 +55,7 @@
         {{/* Store profile pictures of speakers. */}}
         {{ $speaker := . }}
         {{ with $url := $speaker.profilePicture }}
-            {{ with resources.GetRemote $url | images.Filter (images.Process "q90 webp") }}
+            {{ with resources.Get $url }}
                 {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
                 {{ $params := dict "alt" $speaker.fullName }}
                 {{ $resource := dict
@@ -65,7 +65,7 @@
                 }}
                 {{ $resources = $resources | append $resource }}
             {{ else }}
-                {{ errorf "Unable to get remote resource %s" $url }}
+                {{ errorf "Unable to get resource %s" $url }}
             {{ end }}
         {{ end }}
     {{ end }}
