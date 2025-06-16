@@ -32,7 +32,7 @@
 
 .button--outlined:hover {
     background: var(--color-primary);
-    color: #ffffff;
+    color: var(--color-page);
     box-shadow: 0 0 0 0.125rem var(--color-primary);
     border: 0.0625rem solid var(--color-primary);
 }
@@ -40,20 +40,20 @@
 .button--cta {
     border: 0.0625rem solid var(--color-primary);
     background: var(--color-primary);
-    color: #ffffff;
+    color: var(--color-page);
 }
 
 .button--cta-invert {
-    border: 0.0625rem solid white;
-    color: var(--color-primary);
-    background: #ffffff;
+    border: 0.0625rem solid var(--color-page);
+    color: var(--color-page);
 }
 
 .button--cta-invert:hover {
-    box-shadow: 0 0 0 0.125rem white;
-    border: 0.0625rem solid white;
+    box-shadow: 0 0 0 0.125rem var(--color-page);
+    border: 0.0625rem solid var(--color-page);
     color: var(--color-primary);
-    background: #ffffff;
+    border: 0.0625rem solid var(--color-page);
+    background: var(--color-page);
 }
 
 /*
