@@ -61,7 +61,7 @@
                             {{- range $index, $element := $sessionsGroupedByTrack }}
                                 <li role="presentation">
                                     <label class="session-list-filter__label" for="filter-track-{{ $index }}">
-                                        #{{- $element.Key | upper }}
+                                        {{- $element.Key }}
                                     </label>
                                 </li>
                             {{- end }}

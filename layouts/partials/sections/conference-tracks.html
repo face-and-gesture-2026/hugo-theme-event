@@ -12,7 +12,7 @@
         <ol class="conference-tracks-section__list">
             {{- range $input.tracks }}
                 <li class="conference-tracks-section__list-item">
-                    #{{ . | upper }}
+                    {{ . }}
                 </li>
             {{- end }}
         </ol>
