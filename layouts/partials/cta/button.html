@@ -39,7 +39,7 @@
 
 {{ define "partials/inline/cta/link.html" }}
     {{ $input := . }}
-    <a class="button button--outlined" href="{{ $input.url }}" rel="noopener noreferrer" rel="external" target="_blank">
+    <a class="button button--outlined {{ $input.buttonClass }} button--scaled" href="{{ $input.url }}" rel="noopener noreferrer" rel="external" target="_blank">
         {{ T "cta_button.get_ticket" }}
         <div class="button__icon">
             {{ partial "graphics/external-link.html" }}
@@ -56,5 +56,5 @@
         }}
     </noscript>
 {{- else if $input.ctaUrl }}
-    {{ partial "inline/cta/link.html" (dict "url" $input.ctaUrl) }}
+    {{ partial "inline/cta/link.html" (dict "url" $input.ctaUrl "buttonClass" $input.buttonClass) }}
 {{- end }}
