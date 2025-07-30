@@ -14,6 +14,14 @@
     gap: 5.625rem;
 }
 
+.event-highlights-section__logo_div {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    gap: 32px; /* space between images */
+    align-items: center;
+    justify-content: center;
+}
+
 .event-highlights-section__logo {
     max-width: 16.375rem;
     max-height: 16.375rem;
